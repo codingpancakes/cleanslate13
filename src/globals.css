@@ -1,3 +1,216 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "tintta";
+    src: url(/fonts/tintta-Book.woff2) format("woff2"),
+      url(/fonts/tintta-Book.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "tintta";
+    src: url(/fonts/tintta-Medium.woff2) format("woff2"),
+      url(/fonts/tintta-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+.theme-green {
+  --colors-gray1: #161616;
+  --colors-gray2: #3e3e3e;
+  --colors-gray3: #5e5e5e;
+  --colors-gray4: #707070;
+  --colors-gray4: #909090;
+  --colors-gray5: #afafaf;
+  --colors-gray6: #c7c7c7;
+  --colors-gray7: #dddddd;
+  --colors-gray8: #f1f1f1;
+
+  --colors-grayA1: hsla(0, 0%, 9%, 0.5);
+  --colors-grayA2: hsla(0, 0%, 24%, 0.5);
+  --colors-grayA3: hsla(0, 0%, 37%, 0.5);
+  --colors-grayA4: hsla(0, 0%, 44%, 0.5);
+  --colors-grayA5: hsla(0, 0%, 69%, 0.5);
+  --colors-grayA6: hsla(0, 0%, 78%, 0.5);
+  --colors-grayA7: hsla(0, 0%, 87%, 0.5);
+  --colors-grayA8: hsla(0, 0%, 96%, 0.5);
+
+  --colors-primary1: #00231e;
+  --colors-primary2: #00443c;
+  --colors-primary3: #00685e;
+  --colors-primary4: #009689;
+  --colors-primary5: #00baa9;
+  --colors-primary6: #00ffc5;
+  --colors-primary7: #9fffe6;
+  --colors-primary8: #d0fcf5;
+
+  --colors-secondary1: #17151f;
+  --colors-secondary2: #2c2250;
+  --colors-secondary3: #392c72;
+  --colors-secondary4: #443592;
+  --colors-secondary5: #6e56cf;
+  --colors-secondary6: #7c66dc;
+  --colors-secondary7: #9e8cfc;
+  --colors-secondary8: #e6e4f9;
+
+  --colors-scale1: var(--colors-gray1);
+  --colors-scale2: var(--colors-gray2);
+  --colors-scale3: var(--colors-gray3);
+  --colors-scale4: var(--colors-gray4);
+  --colors-scale5: var(--colors-gray5);
+  --colors-scale6: var(--colors-gray6);
+  --colors-scale7: var(--colors-gray7);
+  --colors-scale8: var(--colors-gray8);
+  --colors-scale9: var(--colors-gray9);
+  --colors-scale10: var(--colors-gray10);
+  --colors-scale11: var(--colors-gray11);
+  --colors-scale12: var(--colors-gray12);
+
+  --colors-scaleA1: var(--colors-grayA1);
+  --colors-scaleA2: var(--colors-grayA2);
+  --colors-scaleA3: var(--colors-grayA3);
+  --colors-scaleA4: var(--colors-grayA4);
+  --colors-scaleA5: var(--colors-grayA5);
+  --colors-scaleA6: var(--colors-grayA6);
+  --colors-scaleA7: var(--colors-grayA7);
+  --colors-scaleA8: var(--colors-grayA8);
+  --colors-scaleA9: var(--colors-grayA9);
+  --colors-scaleA10: var(--colors-grayA10);
+  --colors-scaleA11: var(--colors-grayA11);
+  --colors-scaleA12: var(--colors-grayA12);
+}
+
+.gradientbg::before {
+  background: radial-gradient(
+      79.85% 56.11% at 69.93% 80.9%,
+      rgba(0, 2, 0, 0.2) 0%,
+      rgba(20, 111, 20, 0.2) 0.01%,
+      rgba(21, 63, 3, 0.2) 100%
+    )
+    #131413;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+}
+
+.hero-image-wrapper-persona {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  margin: auto auto;
+  /* background-image: url('/images/bg1.jpg'); */
+  overflow: hidden;
+  /* -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 00%);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%); */
+}
+
+.blip001 {
+  position: absolute;
+  left: 12%;
+  top: 25%;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  padding: 15px 15px 13px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.ReactInputVerificationCode-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ReactInputVerificationCode-item {
+  height: 3rem;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+  outline: 0;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.ReactInputVerificationCode-item:focus {
+  box-shadow: 0 0 0 2px #333;
+}
+
+.validCodeInputs .ReactInputVerificationCode__item {
+  border: 1px solid #c9dfcb !important;
+  background-color: #f9fbee !important;
+  box-shadow: none !important;
+}
+
+.invalidCodeInputs .ReactInputVerificationCode__item {
+  border: 1px solid #dfcbc9 !important;
+  background-color: #f8f4f4 !important;
+  box-shadow: none !important;
+}
+
+.react-tel-input .form-control {
+  background-color: var(--colors-scaleA3) !important;
+  width: 100% !important;
+  font-size: 0.875rem !important;
+  font-family: "tintta", sans-serif !important;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: #444 !important;
+  border: 1px solid #444 !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background-color: #444 !important;
+  border: 1px solid #444 !important;
+}
+
+.react-tel-input .country-list .country {
+  background-color: #333 !important;
+  border: 1px solid #444 !important;
+  color: #888 !important;
+  font-size: 0.875rem !important;
+  font-family: "tintta", sans-serif !important;
+}
+.react-tel-input .country-list .country.highlight {
+  background-color: var(--colors-primary3) !important;
+  border: 1px solid var(--colors-primary9) !important;
+  color: #fbfbfb !important;
+  font-size: 0.875rem !important;
+  font-family: "tintta", sans-serif !important;
+}
+
+.react-tel-input .selected-flag .arrow {
+  border-top: 4px solid var(--colors-primary11) !important;
+}

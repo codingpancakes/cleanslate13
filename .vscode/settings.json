@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#7145d6",
+    "titleBar.inactiveBackground": "#55496d",
+    "prettier.eslintIntegration": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  }
+}
