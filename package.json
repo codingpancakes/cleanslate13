@@ -5,7 +5,9 @@
 	"author": "@codingpancakes",
 	"license": "MIT",
 	"lint-staged": {
-		"*": "prettier --ignore-unknown --write"
+		"*": [
+			"prettier --ignore-unknown --write"
+		]
 	},
 	"scripts": {
 		"dev": "next dev",
