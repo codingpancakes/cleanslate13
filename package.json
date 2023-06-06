@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"lint-staged": {
 		"*": [
+			"ts-prune -e",
 			"prettier --ignore-unknown --write"
 		]
 	},
