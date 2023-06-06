@@ -6,6 +6,7 @@ const config = {
   jsxSingleQuote: false,
   semi: true,
   trailingComma: "all",
+  useTabs: true,
   tabWidth: 2,
   plugins: [require.resolve("prettier-plugin-tailwindcss")],
 };
