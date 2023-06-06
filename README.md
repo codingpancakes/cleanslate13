@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Additionally has some custom additions by @codingpancakes:
 
 - Storybook
-- Tailwind 
+- Tailwind
 - TS configuration
 - Linting rules
 - Prettier

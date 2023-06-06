@@ -4,13 +4,19 @@
 	"private": true,
 	"author": "@codingpancakes",
 	"license": "MIT",
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint &&  npx tsc --noEmit",
-		"prettier": "prettier --write --ignore-unknown .",
-		"prettier:check": "prettier --check --ignore-unknown .",
+		"lint:prune": "ts-prune",
+		"lint:spelling": "cspell \"**\" \".github/**/*\"",
+		"prepare": "husky install",
+		"format": "prettier --write --ignore-unknown .",
+		"format:check": "prettier --check --ignore-unknown .",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build "
 	},
@@ -51,6 +57,8 @@
 		"eslint-config-next": "13.4.4",
 		"eslint-plugin-storybook": "^0.6.12",
 		"husky": "^8.0.3",
+		"jsonc-eslint-parser": "^2.3.0",
+		"lint-staged": "^13.2.2",
 		"postcss": "8.4.24",
 		"prettier": "^2.8.8",
 		"prettier-plugin-tailwindcss": "^0.3.0",
