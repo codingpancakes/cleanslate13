@@ -1,4 +1,4 @@
 {
 	"error": true,
-	"ignore": "next.config.js|script|src/(index|linting|pages)"
+	"ignore": "next.config.js|stories|script|next|src/(index|linting|pages)"
 }

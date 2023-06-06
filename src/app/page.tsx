@@ -1,12 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Header } from "../sections/header/Header";
 import type { User } from "../types/user";
 
 export default function Home() {
 	const [user, setUser] = useState<User>();
+
+	const testFuncton = async (param: string) => {
+		const dataz = await fetch("https://api.github.com/users/vercel")
+			.then((res) => res.json())
+			.then((data) => {
+				console.log(data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+
+		return { dataz, param };
+	};
+
+	useEffect(() => {
+		const response: Promise<{ dataz: void; param: string }> =
+			testFuncton("test");
+		console.log(response);
+	}, []);
 
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
