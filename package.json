@@ -12,7 +12,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint &&  npx tsc --noEmit",
-		"lint:prune": "ts-prune",
+		"lint:prune": "ts-prune -e",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky install",
 		"format": "prettier --write --ignore-unknown .",

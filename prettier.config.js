@@ -7,7 +7,7 @@ const config = {
 	semi: true,
 	trailingComma: "all",
 	useTabs: true,
-	tabWidth: 2,
+	tabWidth: 4,
 	plugins: [require.resolve("prettier-plugin-tailwindcss")],
 };
 

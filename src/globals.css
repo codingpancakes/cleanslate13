@@ -84,7 +84,7 @@
 	--colors-scaleA12: var(--colors-grayA12);
 }
 
-.gradientbg::before {
+.gradientBg::before {
 	background: radial-gradient(
 			79.85% 56.11% at 69.93% 80.9%,
 			rgba(0, 2, 0, 0.2) 0%,

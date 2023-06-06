@@ -1,0 +1,28 @@
+{
+	"dictionaries": ["typescript"],
+	"ignorePaths": [
+		".github",
+		".next",
+		"dist",
+		"node_modules",
+		"tsconfig.tsbuildinfo",
+		"tailwind.config.js",
+		"prettier.config.js",
+		"postcss.config.js",
+		"next.config.js",
+		"pnpm-lock.yaml",
+		"README.md",
+		"package.json",
+		"*.svg",
+		"*.svg",
+		"*.mdx"
+	],
+	"words": [
+		"commitlint",
+		"uppercase",
+		"uppercased",
+		"autodocs",
+		"xlink",
+		"tintta"
+	]
+}
