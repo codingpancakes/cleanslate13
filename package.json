@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"lint-staged": {
 		"*": [
+			"next lint &&  npx tsc --noEmit",
 			"ts-prune -e",
 			"prettier --ignore-unknown --write"
 		]
