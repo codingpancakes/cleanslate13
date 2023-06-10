@@ -20,6 +20,7 @@
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
+		"baseUrl": ".",
 		"plugins": [
 			{
 				"name": "next"
@@ -27,10 +28,10 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
-			"@components/*": ["./src/components/*"],
-			"@sections/*": ["./src/sections/*"],
-			"@lib/*": ["./src/lib/*"],
-			"@types/*": ["./src/types/*"]
+			"@/components/*": ["./src/components/*"],
+			"@/sections/*": ["./src/sections/*"],
+			"@/lib/*": ["./src/lib/*"],
+			"@/types/*": ["./src/types/*"]
 		}
 	},
 	"include": [
