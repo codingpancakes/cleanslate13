@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Header } from "../sections/header/Header";
 import type { User } from "../types/user";
 
