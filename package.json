@@ -21,8 +21,8 @@
 		"prepare": "husky install",
 		"format": "prettier --write --ignore-unknown .",
 		"format:check": "prettier --check --ignore-unknown .",
-		"storybook": "storybook dev -p 6006 -s ./public",
-		"build-storybook": "storybook build   -s public"
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.0.2",

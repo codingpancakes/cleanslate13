@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const worksans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Create Next App",
@@ -17,7 +17,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={classNames(inter.className, "theme-green bg-black")}
+				className={classNames(
+					worksans.className,
+					"theme-green bg-black",
+				)}
 			>
 				{children}
 			</body>

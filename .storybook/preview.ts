@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "tailwindcss/tailwind.css";
-import * as NextImage from "next/image";
+// import * as NextImage from "next/image";
 
 import "../src/app/globals.css";
 
@@ -16,13 +16,13 @@ const preview: Preview = {
 	},
 };
 
-Object.defineProperty(NextImage, "default", {
-	configurable: true,
-	value: (props) => <OriginalNextImage {...props} unoptimized />,
-});
+// Object.defineProperty(NextImage, "default", {
+// 	configurable: true,
+// 	value: (props) => <OriginalNextImage {...props} unoptimized />,
+// });
 
-export const globalTypes = {
-	darkMode: true,
-};
+// export const globalTypes = {
+// 	darkMode: true,
+// };
 
-export default preview;
+// export default preview;

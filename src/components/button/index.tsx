@@ -1,6 +1,6 @@
 import React from "react";
 import "./button.css";
-
+import { cn } from "@/lib/utils";
 interface ButtonProps {
 	/**
 	 * Is this the principal call to action on the page?
@@ -40,11 +40,11 @@ export const Button = ({
 	return (
 		<button
 			type="button"
-			className={[
+			className={cn(
 				"storybook-button",
 				`storybook-button--${size}`,
 				mode,
-			].join(" ")}
+			)}
 			{...props}
 		>
 			{label}

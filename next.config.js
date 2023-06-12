@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: [
-			"cdn.stablediffusionapi.com",
-			"pub-8b49af329fae499aa563997f5d4068a4.r2.dev",
-		],
+		domains: ["images.unsplash.com"],
 	},
 	experimental: {
 		serverActions: true,
+	},
+	publicRuntimeConfig: {
+		staticFolder: "/static",
 	},
 };
 
