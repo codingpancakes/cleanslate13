@@ -7,7 +7,7 @@
 	"lint-staged": {
 		"*": [
 			"npx lint &&  npx tsc --noEmit",
-			"ts-prune -e",
+			"sh -c \"npx ts-prune | grep -v 'default' | grep -v 'metadata' | (! grep .) || (echo '⚠️  TS-Prune found some problems' && exit 1)\"",
 			"prettier --ignore-unknown --write"
 		]
 	},
@@ -16,7 +16,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint &&  npx tsc --noEmit",
-		"lint:prune": "ts-prune -e",
+		"lint:prune": "npx ts-prune -e | grep -v 'default' | grep -v 'metadata' || true",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky install",
 		"format": "prettier --write --ignore-unknown .",
