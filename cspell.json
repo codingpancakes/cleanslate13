@@ -17,12 +17,5 @@
 		"*.svg",
 		"*.mdx"
 	],
-	"words": [
-		"commitlint",
-		"uppercase",
-		"uppercased",
-		"autodocs",
-		"xlink",
-		"tintta"
-	]
+	"words": ["commitlint", "uppercase", "uppercased", "autodocs", "xlink"]
 }
